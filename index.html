@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achados Tech</title>
+<style>
+  :root{
+    --bg1:#0f1115;
+    --bg2:#1b1f27;
+    --accent:#ff6a00;
+    --accent-deep:#d94f00;
+    --text:#f2f2f2;
+    --card:#161a21;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    background:linear-gradient(160deg,var(--bg1),var(--bg2));
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px 16px;
+  }
+  .card{
+    width:100%;
+    max-width:440px;
+    background:var(--card);
+    border-radius:24px;
+    padding:32px 24px 28px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+    border:1px solid rgba(255,106,0,0.25);
+  }
+  .logo{
+    width:84px;
+    height:84px;
+    border-radius:50%;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2.2rem;
+    background:radial-gradient(circle at 30% 30%, var(--accent), var(--accent-deep));
+    box-shadow:0 8px 24px rgba(255,106,0,0.35);
+  }
+  h1{
+    font-size:1.5rem;
+    line-height:1.3;
+    margin:0 0 10px;
+    color:#fff;
+  }
+  p.sub{
+    font-size:0.98rem;
+    color:#cfd3da;
+    margin:0 0 20px;
+    line-height:1.5;
+  }
+  ul.beneficios{
+    list-style:none;
+    margin:0 0 24px;
+    padding:0;
+    text-align:left;
+    display:inline-block;
+  }
+  ul.beneficios li{
+    font-size:0.95rem;
+    margin-bottom:8px;
+    padding-left:6px;
+    color:#e6e6e6;
+  }
+  .cta{
+    display:block;
+    width:100%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-deep));
+    color:#fff;
+    font-weight:700;
+    font-size:1.05rem;
+    text-decoration:none;
+    padding:16px 18px;
+    border-radius:14px;
+    box-shadow:0 10px 24px rgba(255,106,0,0.35);
+    transition:transform .15s ease;
+  }
+  .cta:active{transform:scale(0.97);}
+  .aviso{
+    margin-top:16px;
+    font-size:0.78rem;
+    color:#ff9b4d;
+    opacity:0.9;
+  }
+  .marca{
+    margin-top:4px;
+    font-size:0.75rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#9aa0ab;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">📷</div>
+    <h1>🔥 O SEGREDO PARA EQUIPAR SEU SETUP PAGANDO POUCO!</h1>
+    <p class="sub">Câmeras, lentes, tripés, iluminação e acessórios com até 70% OFF. Toque no botão abaixo e entre agora no grupo exclusivo.</p>
+    <ul class="beneficios">
+      <li>📸 Câmeras e lentes com desconto real</li>
+      <li>💡 Iluminação, tripés e acessórios de estúdio</li>
+      <li>✨ Cupons exclusivos todos os dias</li>
+    </ul>
+    <a class="cta" id="btnGrupo" href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" rel="noopener">
+      ENTRAR NO GRUPO AGORA
+    </a>
+    <p class="aviso">⚠️ As melhores ofertas esgotam em minutos. Ative as notificações do grupo para não perder nada!</p>
+    <p class="marca">Achados Tech</p>
+  </div>
+  <script>
+    // Redireciona automaticamente ao abrir a página (bridge page clássica).
+    // Troque a constante abaixo pelo link real do grupo do WhatsApp.
+    var LINK_GRUPO = "https://chat.whatsapp.com/SEU_LINK_AQUI";
+    document.getElementById('btnGrupo').href = LINK_GRUPO;
+    setTimeout(function () {
+      window.location.href = LINK_GRUPO;
+    }, 1800);
+  </script>
+</body>
+</html>
